@@ -37,7 +37,7 @@ export function AuthProvider(props:AuthProvider){
     const [user,setUser] = useState<User | null>(null);
 
     //COLOLOCAR O ID DA API DO GIT
-    const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=`;
+    const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=1fd320deb48f76770c85`;
 
     async function signIn(githubCode : string){
         const response = await api.post<AuthResponse>('authenticate',{
