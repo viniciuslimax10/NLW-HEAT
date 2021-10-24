@@ -3,9 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as AuthSessions from 'expo-auth-session';
 import { api } from '../services/api';
 
-//CLIENTE ID DO GITHUB
-const CLIENT_ID = '';
-const SCOPE = 'read:user';
+const CLIENT_ID = '1fd320deb48f76770c85';
 const USER_STORAGE = '@nlwheat:user';
 const TOKEN_STORAGE = '@nlwheat:token';
 
@@ -49,7 +47,7 @@ function AuthProvider({ children }: AuthProviderProps) {
   async function signIn() {
     try {
       setIsSigningIn(true);
-      const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=${SCOPE}`;
+      const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`;
       const authSessionResponse = await AuthSessions.startAsync({ authUrl }) as AuthorizationResponse;
 
       if (authSessionResponse.type === 'success' && authSessionResponse.params.error !== 'access_denied') {

@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img alt="NLW HEAT" title="NLW HEAT" src="../web/src/assets/dowhile.png" width="300px" />
+    <img alt="NLW HEAT" title="NLW HEAT" src="./web/src/assets/dowhile.png" width="300px" />
 </h1>
 
 
@@ -24,7 +24,7 @@
 
 The objective of this project is allows people to write messages saying what their expectations about event called DOWHILE powered by ROCKETSEAT..
 
-<img alt="Example" title="Example" src="../web/src/assets/home.jpg" />
+<img alt="Example" title="Example" src="./web/src/assets/home.jpg" />
 
 <br />
 

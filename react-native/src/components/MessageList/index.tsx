@@ -3,13 +3,12 @@ import { ScrollView } from 'react-native';
 import { api } from '../../services/api';
 import { io } from 'socket.io-client';
 
-import { MESSAGES_EXAMPLE } from '../../utils/messages';
 
 import { Message, MessageProps } from '../Message';
 
 import { styles } from './styles';
 
-let messagesQueue: MessageProps[] = MESSAGES_EXAMPLE;
+let messagesQueue: MessageProps[] = [];
 
 const socket = io(String(api.defaults.baseURL));
 socket.on('new_message', (newMessage) => {

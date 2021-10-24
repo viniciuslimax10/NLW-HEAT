@@ -33,11 +33,12 @@ type AuthProvider={
 }
 
 export function AuthProvider(props:AuthProvider){
+    const CLIENT_ID = '1fd320deb48f76770c85';
 
     const [user,setUser] = useState<User | null>(null);
 
     //COLOLOCAR O ID DA API DO GIT
-    const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=1fd320deb48f76770c85`;
+    const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=${CLIENT_ID}`;
 
     async function signIn(githubCode : string){
         const response = await api.post<AuthResponse>('authenticate',{
