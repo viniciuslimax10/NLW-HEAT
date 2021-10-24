@@ -6,7 +6,6 @@
     <img alt="NLW HEAT" title="NLW HEAT" src="./web/src/assets/dowhile.png" width="300px" />
 </h1>
 
-
 <p align="center">
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -28,6 +27,7 @@ The objective of this project is allows people to write messages saying what the
 
 <br />
 
+<a id="-technologies"></a>
 ## 🛠️ Technologies
 
 This project was developed with the following technologies:
@@ -52,6 +52,7 @@ This project was developed with the following technologies:
   - Typescript
   - Moti
 
+<a id="-how-to-run"></a>
 ## ⚙️ How To Run
 
 Follow this steps below to run this project
